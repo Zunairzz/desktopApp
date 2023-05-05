@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.loginfrom.HelloController">
+   <children>
+      <Pane prefHeight="518.0" prefWidth="275.0" style="-fx-background-color: #146C94;">
+         <children>
+            <Label layoutX="36.0" layoutY="74.0" style="-fx-text-fill: white;" text="Login Form">
+               <font>
+                  <Font name="Arial Bold" size="37.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="sideImage" fitHeight="241.0" fitWidth="326.0" layoutX="23.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true" />
+         </children></Pane>
+      <Pane layoutX="275.0" prefHeight="518.0" prefWidth="419.0" style="-fx-background-color: #F6F1F1;">
+         <children>
+            <TextField fx:id="username" layoutX="85.0" layoutY="222.0" prefHeight="26.0" prefWidth="250.0" stylesheets="@styles/loginForm.css" />
+            <Label layoutX="85.0" layoutY="199.0" text="Username" />
+            <Label layoutX="84.0" layoutY="270.0" text="Password" />
+            <TextField fx:id="password" layoutX="84.0" layoutY="292.0" prefHeight="26.0" prefWidth="250.0" stylesheets="@styles/loginForm.css" />
+            <Button layoutX="85.0" layoutY="343.0" mnemonicParsing="false" onAction="#doLogin" prefHeight="26.0" prefWidth="250.0" stylesheets="@styles/loginForm.css" text="Button" />
+            <Line endX="100.0" layoutX="212.0" layoutY="399.0" startX="-100.0" />
+            <Label fx:id="text" alignment="CENTER" contentDisplay="CENTER" layoutX="125.0" layoutY="39.0" prefHeight="17.0" prefWidth="169.0" stylesheets="@styles/loginForm.css" textAlignment="CENTER" />
+            <ImageView fx:id="imageView" fitHeight="104.0" fitWidth="135.0" layoutX="149.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
